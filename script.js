@@ -1,3 +1,4 @@
+// Reusable navBar
 function loadNavbar() {
     document.querySelector(".navBar").innerHTML = `
     <ul>
@@ -11,6 +12,7 @@ function loadNavbar() {
 loadNavbar()
 
 
+// Reusable Footer
 function loadFooter() {
 
     document.querySelector(".footer").innerHTML = `
@@ -23,3 +25,13 @@ function loadFooter() {
     <p>&copy 2026 Gift Manager. All rights reserved.</p>`;
 }
 loadFooter();
+
+
+// Add Gift Page
+const giftForm = document.getElementById("giftForm");
+
+giftForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+});
