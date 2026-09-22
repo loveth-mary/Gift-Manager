@@ -34,4 +34,23 @@ giftForm.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
+    const giftName = document.getElementById("giftName").value;
+    const category = document.getElementById("category").value;
+    const giver = document.getElementById("giver").value;
+    const dateReceived = document.getElementById("dateReceived").value;
+    const occasion = document.getElementById("occasion").value;
+    const notes = document.getElementById("notes").value;
+
+    const gift = {
+        giftName: giftName,
+        category: category,
+        giver: giver,
+        dateReceived: dateReceived,
+        occasion: occasion,
+        notes: notes
+    };
+
+    console.log(gift);
+    console.log(gift.notes);
+
 });
