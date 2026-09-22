@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADd Gift</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Add Gift</h1>
+
+    <h3 class="hero-text">
+        Record a gift and keep it safely in personal gift collection.
+    </h3>
+
+    <nav class="navBar"></nav>
+
+    <section class="add-gift-intro">
+        <h2>Record a New Gift</h2>
+
+        <p>
+            Enter the details of the gift you received. You can update or manage the rocord later.
+        </p>
+    </section>
+
+    <section class="gift-form-section">
+
+        <h2>Gift Details</h2>
+
+        <form id="giftForm">
+
+            <label for="giftName">Gift Name</label>
+            <input type="text" id="giftName" name="giftName" required>
+
+
+            <label for="category">Gift Category</label>
+
+            <select id="category" name="category" required>
+
+                <option value="">Select a category</option>
+                <option value="Monetary">Monetary Gift</option>
+                <option value="Material">Material Gift</option>
+                <option value="Equipment">Equipment & Appliances</option>
+
+            </select>
+
+
+            <label for="giver">Who gave you this gift?</label>
+            <input type="text" id="giver" name="giver" required>
+
+
+            <label for="dateReceived">Date Received</label>
+            <input type="date" id="dateReceived" name="dateReceived" required>
+
+
+            <label for="occasion">Occasion</label>
+            <input type="text" id="occasion" name="occasion">
+
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="5"></textarea>
+
+
+            <button type="submit" class="action-btn">
+                Save Gift
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <div class="footer-divider"></div>
+
+    <footer class="footer"></footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
